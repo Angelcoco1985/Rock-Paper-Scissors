@@ -1,3 +1,7 @@
+// initalize variables to keep score
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let randomNum = Math.random() * 1;
     if (randomNum >= 0.66) {
