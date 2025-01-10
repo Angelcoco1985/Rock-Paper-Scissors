@@ -32,7 +32,7 @@ function getComputerChoice() {
 //     }
 // }
 
-// function playGame() {
+// function playGame() { 
 
     function playRound(humanChoice, computerChoice) {
 
@@ -42,6 +42,10 @@ function getComputerChoice() {
             scoreUpdate.textContent = "its a draw";
             divDisplayResults.appendChild(scoreUpdate);
 
+            let score = document.createElement("li");
+            score.textContent = "human score: " + humanScore + " computer score: " + computerScore;
+            divDisplayResults.appendChild(score);
+
         }
     
         else if (humanChoice === "Rock" && computerChoice === "Paper") {
@@ -50,6 +54,10 @@ function getComputerChoice() {
             const scoreUpdate = document.createElement("li");
             scoreUpdate.textContent = "You lose paper beats rock";
             divDisplayResults.appendChild(scoreUpdate);
+
+            let score = document.createElement("li");
+            score.textContent = "human score: " + humanScore + " computer score: " + computerScore;
+            divDisplayResults.appendChild(score);
         }
     
         else if (humanChoice === "Rock" && computerChoice === "Scissors") {
@@ -58,6 +66,10 @@ function getComputerChoice() {
             const scoreUpdate = document.createElement("li");
             scoreUpdate.textContent = "You win rock beats scissors";
             divDisplayResults.appendChild(scoreUpdate);
+
+            let score = document.createElement("li");
+            score.textContent = "human score: " + humanScore + " computer score: " + computerScore;
+            divDisplayResults.appendChild(score);
         }
     
         else if (humanChoice === "Paper" && computerChoice === "Rock") {
@@ -66,6 +78,10 @@ function getComputerChoice() {
             const scoreUpdate = document.createElement("li");
             scoreUpdate.textContent = "You win paper beats rock";
             divDisplayResults.appendChild(scoreUpdate);
+
+            let score = document.createElement("li");
+            score.textContent = "human score: " + humanScore + " computer score: " + computerScore;
+            divDisplayResults.appendChild(score);
         }
     
         else if (humanChoice === "Paper" && computerChoice === "Scissors") {
@@ -74,6 +90,10 @@ function getComputerChoice() {
             const scoreUpdate = document.createElement("li");
             scoreUpdate.textContent = "You lose Scissors beats paper";
             divDisplayResults.appendChild(scoreUpdate);
+
+            let score = document.createElement("li");
+            score.textContent = "human score: " + humanScore + " computer score: " + computerScore;
+            divDisplayResults.appendChild(score);
         }
     
         else if (humanChoice === "Scissors" && computerChoice === "Paper") {
@@ -82,6 +102,10 @@ function getComputerChoice() {
             const scoreUpdate = document.createElement("li");
             scoreUpdate.textContent = "You Win Scissors beats paper";
             divDisplayResults.appendChild(scoreUpdate);
+
+            let score = document.createElement("li");
+            score.textContent = "human score: " + humanScore + " computer score: " + computerScore;
+            divDisplayResults.appendChild(score);
         }
     
         else if (humanChoice === "Scissors" && computerChoice === "Rock") {
@@ -90,6 +114,10 @@ function getComputerChoice() {
             const scoreUpdate = document.createElement("li");
             scoreUpdate.textContent = "You lose Rock beats scissors";
             divDisplayResults.appendChild(scoreUpdate);
+
+            let score = document.createElement("li");
+            score.textContent = "human score: " + humanScore + " computer score: " + computerScore;
+            divDisplayResults.appendChild(score);
         }
     
         else {
